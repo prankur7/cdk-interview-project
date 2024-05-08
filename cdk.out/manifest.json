@@ -1,0 +1,199 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "MyServerLessStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "MyServerLessStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "MyServerLessStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "MyServerLessStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/abb09ec6ce53791baba54dfed5c169e9852d40eb73f5138747dbd946f666f8c4.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "MyServerLessStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "MyServerLessStack.assets"
+      ],
+      "metadata": {
+        "/MyServerLessStack/AWSResourcesConstructt/MyTableConstruct": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "AWSResourcesConstructtMyTableConstruct28053EB8"
+            }
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyTableConstruct/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyTableConstruct28053EB8"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/RoleConstruct/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtRoleConstruct938FAA0A"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/RoleConstruct/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtRoleConstructDefaultPolicy155A521B"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyNewPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyNewPolicyCBF9E3A8"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyLambda4A5294D1"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstruct28FB5D45"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstructDeploymentE8B041FCde226ee29c99dfeed45ee777c8ece8e4"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstructDeploymentStageprodEC569B3F"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstructEndpoint1FB23DEC"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/Default/hello/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstructhello1472BC11"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/Default/hello/GET/ApiPermission.MyServerLessStackAWSResourcesConstructtMyApiconstruct841F65DD.GET..hello": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstructhelloGETApiPermissionMyServerLessStackAWSResourcesConstructtMyApiconstruct841F65DDGEThelloEF3F8A5F"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/Default/hello/GET/ApiPermission.Test.MyServerLessStackAWSResourcesConstructtMyApiconstruct841F65DD.GET..hello": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstructhelloGETApiPermissionTestMyServerLessStackAWSResourcesConstructtMyApiconstruct841F65DDGEThelloA6F6B572"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/Default/hello/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstructhelloGET0E0DF614"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/Default/hello/POST/ApiPermission.MyServerLessStackAWSResourcesConstructtMyApiconstruct841F65DD.POST..hello": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstructhelloPOSTApiPermissionMyServerLessStackAWSResourcesConstructtMyApiconstruct841F65DDPOSThelloCC1F456F"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/Default/hello/POST/ApiPermission.Test.MyServerLessStackAWSResourcesConstructtMyApiconstruct841F65DD.POST..hello": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstructhelloPOSTApiPermissionTestMyServerLessStackAWSResourcesConstructtMyApiconstruct841F65DDPOSThello95563202"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/Default/hello/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstructhelloPOST5D88A047"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/UsagePlan/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstructUsagePlan721E9B0C"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/UsagePlan/UsagePlanKeyResource:MyServerLessStackAWSResourcesConstructtExampleApiKeyEDC19FC6": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtMyApiconstructUsagePlanUsagePlanKeyResourceMyServerLessStackAWSResourcesConstructtExampleApiKeyEDC19FC6AAFADD74"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/ExampleApiKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtExampleApiKeyE4D4D7D9"
+          }
+        ],
+        "/MyServerLessStack/AWSResourcesConstructt/ApiDeployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSResourcesConstructtApiDeployment70C60BA00e3b3a71579484e3382d89e56f36076a"
+          }
+        ],
+        "/MyServerLessStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/MyServerLessStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/MyServerLessStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/MyServerLessStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "MyServerLessStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

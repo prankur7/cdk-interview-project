@@ -1,19 +1,6 @@
 *.js
 !jest.config.js
-*.d.ts
-node_modules
 
 # CDK asset staging directory
-.cdk.staging
-cdk.out
 
-package-lock.json
-package.json
-tsconfig.json
-README.md
-jest.config.js
-cdk.json
-test
-lib
-bin
-.npmignore
+
