@@ -778,14 +778,14 @@
                           "version": "2.138.0"
                         }
                       },
-                      "UsagePlanKeyResource:MyServerLessStackAWSResourcesConstructtExampleApiKeyEDC19FC6": {
-                        "id": "UsagePlanKeyResource:MyServerLessStackAWSResourcesConstructtExampleApiKeyEDC19FC6",
-                        "path": "MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/UsagePlan/UsagePlanKeyResource:MyServerLessStackAWSResourcesConstructtExampleApiKeyEDC19FC6",
+                      "UsagePlanKeyResource:MyServerLessStackAWSResourcesConstructtRestApiKey3EC39D29": {
+                        "id": "UsagePlanKeyResource:MyServerLessStackAWSResourcesConstructtRestApiKey3EC39D29",
+                        "path": "MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/UsagePlan/UsagePlanKeyResource:MyServerLessStackAWSResourcesConstructtRestApiKey3EC39D29",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::ApiGateway::UsagePlanKey",
                           "aws:cdk:cloudformation:props": {
                             "keyId": {
-                              "Ref": "AWSResourcesConstructtExampleApiKeyE4D4D7D9"
+                              "Ref": "AWSResourcesConstructtRestApiKeyE79F7EE0"
                             },
                             "keyType": "API_KEY",
                             "usagePlanId": {
@@ -810,13 +810,13 @@
                   "version": "2.138.0"
                 }
               },
-              "ExampleApiKey": {
-                "id": "ExampleApiKey",
-                "path": "MyServerLessStack/AWSResourcesConstructt/ExampleApiKey",
+              "RestApi-Key": {
+                "id": "RestApi-Key",
+                "path": "MyServerLessStack/AWSResourcesConstructt/RestApi-Key",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "MyServerLessStack/AWSResourcesConstructt/ExampleApiKey/Resource",
+                    "path": "MyServerLessStack/AWSResourcesConstructt/RestApi-Key/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::ApiGateway::ApiKey",
                       "aws:cdk:cloudformation:props": {

@@ -18,7 +18,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/abb09ec6ce53791baba54dfed5c169e9852d40eb73f5138747dbd946f666f8c4.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/96c7ffbcd092850139cca12a54389b9d4a8c81c727c1ecdc8ef47e49695c0009.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -144,16 +144,16 @@
             "data": "AWSResourcesConstructtMyApiconstructUsagePlan721E9B0C"
           }
         ],
-        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/UsagePlan/UsagePlanKeyResource:MyServerLessStackAWSResourcesConstructtExampleApiKeyEDC19FC6": [
+        "/MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/UsagePlan/UsagePlanKeyResource:MyServerLessStackAWSResourcesConstructtRestApiKey3EC39D29": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AWSResourcesConstructtMyApiconstructUsagePlanUsagePlanKeyResourceMyServerLessStackAWSResourcesConstructtExampleApiKeyEDC19FC6AAFADD74"
+            "data": "AWSResourcesConstructtMyApiconstructUsagePlanUsagePlanKeyResourceMyServerLessStackAWSResourcesConstructtRestApiKey3EC39D29008EF770"
           }
         ],
-        "/MyServerLessStack/AWSResourcesConstructt/ExampleApiKey/Resource": [
+        "/MyServerLessStack/AWSResourcesConstructt/RestApi-Key/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AWSResourcesConstructtExampleApiKeyE4D4D7D9"
+            "data": "AWSResourcesConstructtRestApiKeyE79F7EE0"
           }
         ],
         "/MyServerLessStack/AWSResourcesConstructt/ApiDeployment/Resource": [

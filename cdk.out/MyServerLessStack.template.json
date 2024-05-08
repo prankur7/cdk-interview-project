@@ -516,11 +516,11 @@
     "aws:cdk:path": "MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/UsagePlan/Resource"
    }
   },
-  "AWSResourcesConstructtMyApiconstructUsagePlanUsagePlanKeyResourceMyServerLessStackAWSResourcesConstructtExampleApiKeyEDC19FC6AAFADD74": {
+  "AWSResourcesConstructtMyApiconstructUsagePlanUsagePlanKeyResourceMyServerLessStackAWSResourcesConstructtRestApiKey3EC39D29008EF770": {
    "Type": "AWS::ApiGateway::UsagePlanKey",
    "Properties": {
     "KeyId": {
-     "Ref": "AWSResourcesConstructtExampleApiKeyE4D4D7D9"
+     "Ref": "AWSResourcesConstructtRestApiKeyE79F7EE0"
     },
     "KeyType": "API_KEY",
     "UsagePlanId": {
@@ -528,16 +528,16 @@
     }
    },
    "Metadata": {
-    "aws:cdk:path": "MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/UsagePlan/UsagePlanKeyResource:MyServerLessStackAWSResourcesConstructtExampleApiKeyEDC19FC6"
+    "aws:cdk:path": "MyServerLessStack/AWSResourcesConstructt/MyApiconstruct/UsagePlan/UsagePlanKeyResource:MyServerLessStackAWSResourcesConstructtRestApiKey3EC39D29"
    }
   },
-  "AWSResourcesConstructtExampleApiKeyE4D4D7D9": {
+  "AWSResourcesConstructtRestApiKeyE79F7EE0": {
    "Type": "AWS::ApiGateway::ApiKey",
    "Properties": {
     "Enabled": true
    },
    "Metadata": {
-    "aws:cdk:path": "MyServerLessStack/AWSResourcesConstructt/ExampleApiKey/Resource"
+    "aws:cdk:path": "MyServerLessStack/AWSResourcesConstructt/RestApi-Key/Resource"
    }
   },
   "AWSResourcesConstructtApiDeployment70C60BA00e3b3a71579484e3382d89e56f36076a": {
