@@ -33,7 +33,7 @@ This will create a new AWS CDK project with the basic structure and configuratio
 # Step 3: Define your infrastructure
 In the lib directory, you'll find a file called stack.ts. This is where you define your infrastructure using AWS CDK constructs. For example:
 
-   `import * as cdk from 'aws-cdk-lib';
+ ```import * as cdk from 'aws-cdk-lib';
     import * as ec2 from 'aws-cdk-lib/aws-ec2';
     export class MyStack extends cdk.Stack {
     constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
@@ -44,7 +44,7 @@ In the lib directory, you'll find a file called stack.ts. This is where you defi
         vpc,
         instanceType: ec2.InstanceType.T2_MICRO,
         });
-    }}`
+    }}```
 
 
 # Step 4: Synthesize your infrastructure
